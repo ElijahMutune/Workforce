@@ -1,0 +1,93 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #f8fafc;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.1);
+    text-align: center;
+}
+
+.login-logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.login-card h1 {
+    margin: 0;
+    color: #0f172a;
+}
+
+.login-subtitle {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.login-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-role {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.2s ease;
+}
+
+.login-role:hover {
+    transform: translateY(-2px);
+    border-color: #2563eb;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.12);
+}
+
+.login-role span {
+    font-size: 25px;
+}
+
+.login-role div {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-role strong {
+    color: #0f172a;
+    font-size: 15px;
+}
+
+.login-role small {
+    color: #64748b;
+    margin-top: 3px;
+}
+
+.back-home {
+    margin-top: 25px;
+    border: none;
+    background: transparent;
+    color: #2563eb;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.back-home:hover {
+    text-decoration: underline;
+}
