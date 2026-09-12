@@ -43,11 +43,11 @@ function CustomerPortal() {
                     {/* Service 1 */}
                     <div className="service-card">
                         <h3>
-                            Internet Installation
+                            Panel & Circuit Troubleshooting.
                         </h3>
 
                         <p>
-                            Professional internet installation service.
+                            Professional panel and circuit installation service.
                         </p>
 
                         <p className="service-price">
@@ -66,11 +66,11 @@ function CustomerPortal() {
                     {/* Service 2 */}
                     <div className="service-card">
                         <h3>
-                        Network Troubleshooting
+                            Complex Plumbing & Water Management
                         </h3>
 
                         <p>
-                            Diagnose and resolve network problems.
+                            Diagnose and resolve water problems.
                         </p>
 
                         <p className="service-price">
@@ -89,11 +89,11 @@ function CustomerPortal() {
                     {/* Service 3 */}
                     <div className="service-card">
                         <h3>
-                        Router Configuration
+                            HVAC
                         </h3>
 
                         <p>
-                            Router setup and configuration.
+                            Replacing air filters and thermostats.
                         </p>
 
                         <p className="service-price">

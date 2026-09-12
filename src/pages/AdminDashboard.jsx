@@ -91,7 +91,7 @@ function AdminDashboard() {
 
                         <div className="task-row">
                             <div>
-                                <strong>Internet Installation</strong>
+                                <strong>Panel & Circuit Troubleshooting</strong>
                                 <span>Customer: John Mwangi</span>
                             </div>
 
@@ -106,7 +106,7 @@ function AdminDashboard() {
 
                         <div className="task-row">
                             <div>
-                                <strong>Router Replacement</strong>
+                                <strong>Complex Plumbing & Water Management</strong>
                                 <span>Customer: Mary Wanjiku</span>
                             </div>
 
@@ -121,7 +121,7 @@ function AdminDashboard() {
 
                         <div className="task-row">
                             <div>
-                                <strong>Network Troubleshooting</strong>
+                                <strong>HVAC</strong>
                                 <span>Customer: Peter Kamau</span>
                             </div>
 
