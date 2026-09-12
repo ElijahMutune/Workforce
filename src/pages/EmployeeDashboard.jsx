@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./EmployeeDashboard.css"
 
 function EmployeeDashboard() {
     const [tasks, setTasks] = useState([
