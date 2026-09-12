@@ -1,0 +1,160 @@
+.service-request-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #f8fafc;
+    display: flex;
+    justify-content: center;
+}
+
+.service-request-card {
+    width: 100%;
+    max-width: 750px;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.1);
+}
+
+.request-logo {
+    color: #2563eb;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.service-request-card h1 {
+    margin: 0;
+    color: #0f172a;
+}
+
+.request-subtitle {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.selected-service {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.selected-service span {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.selected-service strong {
+    color: #1d4ed8;
+    font-size: 17px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section h2 {
+    font-size: 18px;
+    color: #0f172a;
+    margin-bottom: 18px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.request-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.cancel-button,
+.submit-request-button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cancel-button {
+    background: white;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+}
+
+.submit-request-button {
+    border: none;
+    background: #2563eb;
+    color: white;
+}
+
+.submit-request-button:hover {
+    background: #1d4ed8;
+}
+
+.cancel-button:hover {
+    background: #f8fafc;
+}
+
+@media (max-width: 650px) {
+    .service-request-card {
+        padding: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .request-actions {
+        flex-direction: column;
+    }
+
+    .cancel-button,
+    .submit-request-button {
+        width: 100%;
+    }
+}

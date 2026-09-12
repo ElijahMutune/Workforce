@@ -21,6 +21,7 @@ import CustomerPortal from "./pages/CustomerPortal"
 import Login from "./pages/Login"
 import AdminDashboard from "./pages/AdminDashboard"
 import ServiceRequestForm from "./pages/ServiceRequestForm"
+import CustomerDashboard from "./pages/CustomerDashboard"
 
 
 function AdminLayout() {
@@ -108,14 +109,14 @@ function AdminLayout() {
                         path="/requests"
                         element={<ServiceRequests />}
                     />
+                    <Route
+                        path="/customer"
+                        element={<CustomerDashboard />}
+                    />
 
                     <Route
                         path="/tasks"
                         element={<Tasks />}
-                    />
-                    <Route
-                        path="/request-service"
-                        element={<ServiceRequestForm />}
                     />
 
                     <Route
@@ -187,6 +188,18 @@ function App() {
                 <Route
                     path="/login"
                     element={<Login />}
+                />
+
+                {/* Customer Service Request */}
+                <Route
+                    path="/request-service"
+                    element={<ServiceRequestForm />}
+                />
+
+                {/* Customer Dashboard */}
+                <Route
+                    path="/customer"
+                    element={<CustomerDashboard />}
                 />
 
                 {/* Admin System */}

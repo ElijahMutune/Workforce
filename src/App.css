@@ -23,11 +23,14 @@ button {
 /* Sidebar */
 
 .sidebar {
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
   width: 250px;
   min-height: 100vh;
   background: #111827;
   color: white;
-  padding: 24px 18px;
+  padding: 2px 20px;
   display: flex;
   flex-direction: column;
   position: fixed;

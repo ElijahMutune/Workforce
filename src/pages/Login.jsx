@@ -1,10 +1,25 @@
 import { useNavigate } from "react-router-dom"
+import { useAuth } from "../AuthContext"
 import "./Login.css"
 
 function Login() {
     const navigate = useNavigate()
+    const { login } = useAuth()
 
     const loginAs = (role) => {
+        const userData = {
+            id: role === "admin" ? 1 : role === "employee" ? 2 : 3,
+            name:
+                role === "admin"
+                    ? "Workforce Admin"
+                    : role === "employee"
+                        ? "Brian Mwangi"
+                        : "Customer",
+            role: role,
+        }
+
+        login(userData)
+
         if (role === "admin") {
             navigate("/admin")
         }
@@ -20,7 +35,6 @@ function Login() {
 
     return (
         <div className="login-page">
-
             <div className="login-card">
 
                 <div className="login-logo">
@@ -33,7 +47,6 @@ function Login() {
                     Sign in to access your Workforce account
                 </p>
 
-
                 <div className="login-options">
 
                     <button
@@ -41,30 +54,31 @@ function Login() {
                         onClick={() => loginAs("admin")}
                     >
                         <span>👨‍💼</span>
+
                         <div>
                             <strong>Admin</strong>
                             <small>Company management</small>
                         </div>
                     </button>
 
-
                     <button
                         className="login-role employee-login"
                         onClick={() => loginAs("employee")}
                     >
                         <span>🧑‍🔧</span>
+
                         <div>
                             <strong>Employee</strong>
                             <small>Manage assigned jobs</small>
                         </div>
                     </button>
 
-
                     <button
                         className="login-role customer-login"
                         onClick={() => loginAs("customer")}
                     >
                         <span>👤</span>
+
                         <div>
                             <strong>Customer</strong>
                             <small>Manage your services</small>
@@ -72,7 +86,6 @@ function Login() {
                     </button>
 
                 </div>
-
 
                 <button
                     className="back-home"
@@ -82,7 +95,6 @@ function Login() {
                 </button>
 
             </div>
-
         </div>
     )
 }
